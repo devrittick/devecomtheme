@@ -15,13 +15,13 @@
       {% endif %}
       <title>{{ page_title }}</title>
       <!-- bootstrap core css -->
-      {{"bootstrap.css" | | asset_url | stylesheettag}}
+      {{"bootstrap.css" | | asset_url | stylesheet_tag }}
       <!-- font awesome style -->
-      {{"font-awesome.min.css" | | asset_url | stylesheettag}}
+      {{"font-awesome.min.css" | | asset_url | stylesheet_tag }}
       <!-- Custom styles for this template -->
-      {{"style.css" | | asset_url | stylesheettag}}
+      {{"style.css" | | asset_url | stylesheettag }}
       <!-- responsive style -->
-      {{"responsive.css" | | asset_url | stylesheettag}}
+      {{"responsive.css" | | asset_url | stylesheettag }}
       {{ content_for_header }}
    </head>
    <body>
