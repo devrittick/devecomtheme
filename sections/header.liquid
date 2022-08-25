@@ -14,8 +14,8 @@
            <ul class="navbar-nav">
 
             {% for link in section.settings.headerMenu.links %}
-              <li class="nav-item {% if section.settings.headerMenu.links > 0 %} dropdown {% endif %}">
-                 <a class="nav-link {% if section.settings.headerMenu.links > 0 %} dropdown-toggle {% endif %}" href="{{ link.url }}" {% if section.settings.headerMenu.links > 0 %} data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true" {% endif %}>{{ link.title }} <span class="sr-only">(current)</span></a>
+              <li class="nav-item {% if section.settings.headerMenu.links.size > 0 %} dropdown {% endif %}">
+                 <a class="nav-link {% if section.settings.headerMenu.links.size > 0 %} dropdown-toggle {% endif %}" href="{{ link.url }}" {% if section.settings.headerMenu.links.size > 0 %} data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true" {% endif %}>{{ link.title }} <span class="sr-only">(current)</span></a>
                 {% if link.links.size > 0 %}
                  <ul class="dropdown-menu">
                   {% for child_link in link.links %}
