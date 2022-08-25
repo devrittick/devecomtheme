@@ -75,21 +75,18 @@
      </div>
 
      {% schema %}
-  {
-    "name": "Footer",
-    "settings": [
-    {
-     "type": "image_picker",
-     "id": "footerLogo",
-     "label": "Select Footer Logo"
-    },
-      {
-        "type": "link_list",
-        "id": "footer_linklist",
-        "label": "Footer link list 1",
-        "default": "footer"
-      }
-    ]
-  }
-
-{% endschema %}
+     {
+       "name": "footer section",
+       "blocks": [
+         {
+            "type": "image_picker",
+            "id": "footerLogo",
+            "label": "Footer Logo"
+         }
+       ],
+       "settings": [
+         "type": "header",
+         "content": "Footer Section"
+       ],
+     }
+     {% endschema %}
