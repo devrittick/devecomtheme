@@ -74,15 +74,25 @@
         <p>© 2021 All Rights Reserved By <a href="https://html.design/">Free Html Templates</a></p>
      </div>
 
-{% schema %}
-{
-  "name": "t:sections.footer.name",
-  "class": "footer-section",
-  "settings": [
-  {
-    "type": "Footer",
-    "content": "footer section"
-   },
-  ]
-}
-{% endschema %}
+     {% schema %}
+     {
+       "name": "t:sections.footer.name",
+       "class": "section-footer",
+       "settings": [
+         {
+          "type": "footer",
+          "content": "footer section"
+         },
+         {
+          "type": "image_picker",
+          "id": "footerLogo",
+          "label": "Footer logo"
+         },
+         {
+          "type": "link_list",
+          "id": "footerMenuone",
+          "label": "Selecte footer Menu 1"
+         }
+       ]
+     }
+     {% endschema %}
