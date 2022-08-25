@@ -19,7 +19,7 @@
                 {% if link.links.size > 0 %}
                  <ul class="dropdown-menu">
                   {% for child_link in link.links %}
-                  <li><a href="{{ child_link.url }}">{{ child_link.title }}</a></li>
+                  <li class="{% if child_link.active %}activ{% endif %}"><a href="{{ child_link.url }}">{{ child_link.title }}</a></li>
                   {% endfor %}
                </ul>
                {% endif %}
