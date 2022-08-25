@@ -74,49 +74,49 @@
         <p>© 2021 All Rights Reserved By <a href="https://html.design/">Free Html Templates</a></p>
      </div>
 
-     {% schema %}
-     {
-      "name": "Footer",
-      "blocks": [
-          {
-              "type": "text",
-              "name": "TextArea",
-              "settings": [
-                  {
-                      "type": "richtext",
-                      "id": "footerTextOne",
-                      "label": "Add Text"
-                  }
-              ]
-          },
-          {
-              "type": "link_list",
-              "name": "menu",
-              "settings": [
-                  {
-                      "type": "link_list",
-                      "id": "footer_menu",
-                      "label": "Footer menu 1"
-                  }
-              ]
-          },
-          {
-            "type": "link_list_two",
-            "name": "menu2",
-            "settings": [
-                {
-                    "type": "link_list",
-                    "id": "footer_menu_tow",
-                    "label": "Footer menu 2"
-                }
-            ]
-        }
-      ],
-      "settings": [
-          {
-              "type": "header",
-              "content": "Footer Section"
-          }
-      ]
-  }
-     {% endschema %}
+{% schema %}
+{
+   "name": "Footer",
+   "blocks": [
+       {
+           "type": "text",
+           "name": "TextArea",
+           "settings": [
+               {
+                   "type": "richtext",
+                   "id": "footerTextOne",
+                   "label": "Add Text"
+               }
+           ]
+       },
+       {
+           "type": "link_list",
+           "name": "menu",
+           "settings": [
+               {
+                   "type": "link_list",
+                   "id": "footer_menu",
+                   "label": "Footer menu 1"
+               }
+           ]
+       },
+       {
+           "type": "newsletter",
+           "name": "newsletter",
+           "settings": [
+               {
+                   "type": "title",
+                   "id": "newsletter_heading",
+                   "label": "Add Newsletter"
+               }
+           ]
+       }
+   ],
+   "settings": [
+       {
+           "type": "header",
+           "content": "Footer Section"
+       }
+   ]
+}
+{% endschema %}
