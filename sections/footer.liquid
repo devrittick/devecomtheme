@@ -76,12 +76,19 @@
 
      {% schema %}
      {
-       "name": "footer section",
+       "name": "Footer",
        "blocks": [
          {
-            "type": "richtext",
-            "id": "footertextone",
-            "label": "Footer text"
+            "type": "text",
+            "name": "TextArea",
+            "settings": [
+               {
+                  "type": "richtext",
+                  "id": "footerTextOne",
+                  "label": "Add Text"
+               }
+            ]
+
          }
        ],
        "settings": [
