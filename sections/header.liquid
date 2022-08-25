@@ -18,7 +18,7 @@
                  <a class="nav-link" href="{{ link.url }}">{{ link.title }} <span class="sr-only">(current)</span></a>
                 {% if link.links.size > 0 %}
                  <ul class="dropdown-menu">
-                  {% for child_link in link.links }
+                  {% for child_link in link.links %}
                   <li><a href="{{ child_link.url }}">{{ child_link.title }}</a></li>
                   {% endfor %}
                </ul>
