@@ -76,31 +76,47 @@
 
      {% schema %}
      {
-       "name": "Footer",
-       "blocks": [
-         {
-            "type": "text",
-            "name": "TextArea",
-            "settings": [
-               {
-                  "type": "richtext",
-                  "id": "footerTextOne",
-                  "label": "Add Text"
-               },{
-                  "type": "text",
-                  "id": "heading",
-                  "default": "Quick links",
-                  "label": "t:sections.footer.blocks.link_list.settings.heading.label"
-                }
-            ]
-
-         }
-       ],
-       "settings": [
-         {
-         "type": "header",
-         "content": "Footer Section"
-         }
-       ]
-     }
+      "name": "Footer",
+      "blocks": [
+          {
+              "type": "text",
+              "name": "TextArea",
+              "settings": [
+                  {
+                      "type": "richtext",
+                      "id": "footerTextOne",
+                      "label": "Add Text"
+                  }
+              ]
+          },
+          {
+              "type": "link_list",
+              "name": "menu",
+              "settings": [
+                  {
+                      "type": "link_list",
+                      "id": "footer_menu",
+                      "label": "Footer menu 1"
+                  }
+              ]
+          },
+          {
+              "type": "newsletter",
+              "name": "newsletter",
+              "settings": [
+                  {
+                      "type": "title",
+                      "id": "newsletter_title",
+                      "label": "Newsletter Title"
+                  }
+              ]
+          }
+      ],
+      "settings": [
+          {
+              "type": "header",
+              "content": "Footer Section"
+          }
+      ]
+  }
      {% endschema %}
