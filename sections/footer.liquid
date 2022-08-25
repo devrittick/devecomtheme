@@ -75,24 +75,21 @@
      </div>
 
      {% schema %}
-     {
-       "name": "t:sections.footer.name",
-       "class": "section-footer",
-       "settings": [
-         {
-          "type": "footer",
-          "content": "footer section"
-         },
-         {
-          "type": "image_picker",
-          "id": "footerLogo",
-          "label": "Footer logo"
-         },
-         {
-          "type": "link_list",
-          "id": "footerMenuone",
-          "label": "Selecte footer Menu 1"
-         }
-       ]
-     }
-     {% endschema %}
+  {
+    "name": "Footer",
+    "settings": [
+    {
+     "type": "image_picker",
+     "id": "footerLogo",
+     "label": "Select Footer Logo"
+    },
+      {
+        "type": "link_list",
+        "id": "footer_linklist",
+        "label": "Footer link list 1",
+        "default": "footer"
+      }
+    ]
+  }
+
+{% endschema %}
