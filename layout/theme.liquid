@@ -17,13 +17,13 @@
       {% endif %}
       <title>{{ page_title }}</title>
       <!-- bootstrap core css -->
-      {{"bootstrap.css" | | asset_url | stylesheet_tag }}
+      {{"bootstrap.css" |  asset_url | stylesheet_tag }}
       <!-- font awesome style -->
-      {{"font-awesome.min.css" | | asset_url | stylesheet_tag }}
+      {{"font-awesome.min.css" |  asset_url | stylesheet_tag }}
       <!-- Custom styles for this template -->
-      {{"style.css" | | asset_url | stylesheet_tag }}
+      {{"style.css" |  asset_url | stylesheet_tag }}
       <!-- responsive style -->
-      {{"responsive.css" | | asset_url | stylesheet_tag }}
+      {{"responsive.css" |  asset_url | stylesheet_tag }}
       {{ content_for_header }}
    </head>
    <body>
