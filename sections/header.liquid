@@ -15,7 +15,7 @@
 
             {% for link in section.settings.headerMenu.links %}
               <li class="nav-item {% if link.active  %} active {% endif %}">
-                 <a class="nav-link {% if section.settings.headerMenu.links.size > 0 %} dropdown-toggle {% endif %}" href="{{ link.url }}" {% if section.settings.headerMenu.links.size > 0 %} data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true" {% endif %}>{{ link.title }} <span class="sr-only">(current)</span></a>
+                 <a class="nav-link {% if link.links.size > 0 %} dropdown-toggle {% endif %}" href="{{ link.url }}" {% if link.links.size > 0 %} data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true" {% endif %}>{{ link.title }} <span class="sr-only">(current)</span></a>
                 {% if link.links.size > 0 %}
                  <ul class="dropdown-menu">
                   {% for child_link in link.links %}
