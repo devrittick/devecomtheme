@@ -12,7 +12,7 @@
       <meta name="author" content="" />
       {% if settings.favicon != blank %}
       <link rel="shortcut icon" href="{{ settings.favicon | img_url:'32*32' }}" type="">
-      {% elsif settings.favicon == blank %}
+      {% elsif settings.favicon == null %}
       <link rel="shortcut icon" href="view-source:https://www.udemy.com/staticx/udemy/images/v8/favicon-32x32.png" type="">
       {% endif %}
       <title>{{ page_title }}</title>
